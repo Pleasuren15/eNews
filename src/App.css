@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: 'Montserrat', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.account-search{
+    padding: 0.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.account-search button{
+    border: none;
+    background-color: rgb(138, 138, 138);
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    cursor:pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.account-search, .account-search button{
+    background-color: rgb(255, 255, 255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.my-nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: rgb(182, 31, 31);
+}
+
+.my-nav-bar-ul, .nav-comp-ul, .footer-social-ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.my-nav-bar button{
+    border: none;
+    background-color: rgb(182, 31, 31);
+    font-size: 1rem;
+    cursor:pointer;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.my-nav-bar button:hover{
+    transform: scale(1.1);
+}
+
+.my-nav-bar-ul li, .nav-comp-ul li{
+    padding: 0 0.7rem;
+}
+
+.my-nav-bar-ul li:last-child,.nav-comp-ul li:last-child{
+    padding-right: 0;
+}
+
+.nav-comp-ul li:first-child{
+    padding-left: 0;
+}
+
+.nav-comp{
+    margin: 1rem 3rem;
+}
+
+.nav-comp-ul button{
+    border: none;
+    font:600 1rem 'Montserrat', sans-serif;
+    cursor:pointer;
+    background-color: white;
+    color: rgb(102, 102, 102);
+}
+
+.nav-comp-ul button:hover{
+    color: #000;
+}
+
+.footer{
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(63, 63, 63);
+}
+
+.footer-social-ul{
+list-style-type: none;
+}
+
+.footer-social-ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    background-color: rgb(77, 77, 77);
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.footer-social-ul li:hover{
+    background-color: rgb(182, 31, 31);
 }
