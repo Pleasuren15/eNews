@@ -19,7 +19,7 @@ export default function NavBar() {
             <button onClick={() => setComponent("Help")}>Help</button>
           </li>
           <li>
-            <button onClick={() => setComponent("Contacts")}>Contacts</button>
+            <button onClick={() => setComponent("Contacts")}>Contact</button>
           </li>
         </ul>
       </div>
