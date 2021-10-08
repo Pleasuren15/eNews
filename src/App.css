@@ -91,9 +91,17 @@ body{
 
 .footer{
     padding: 1rem 3rem;
+    background-color: rgb(63, 63, 63);
+}
+
+.footer p{
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-socials{
     display: flex;
     justify-content: center;
-    background-color: rgb(63, 63, 63);
 }
 
 .footer-social-ul{

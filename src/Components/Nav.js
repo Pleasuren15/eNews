@@ -23,7 +23,6 @@ export default function NavBar() {
           </li>
         </ul>
       </div>
-
       <div>
         {component === "News" ? (
           <News />
