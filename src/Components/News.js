@@ -346,7 +346,6 @@ export default function News() {
   });
   const [source, setSource] = useState("top-headlines");
 
-  console.log(source);
 
   var request = new XMLHttpRequest();
   request.open(
@@ -391,6 +390,10 @@ export default function News() {
         </ul>
       </div>
 
+    {articles.status === "error" ? 
+      <div  className="articles-error">
+        <h2>{articles.message}</h2>
+      </div> : 
       <div className="articles-con">
         {articles.articles
           .filter((f) => f.source.id === source)
@@ -403,7 +406,7 @@ export default function News() {
               </div>
             </div>
           ))}
-      </div>
+      </div>}
     </React.Fragment>
   );
 }
